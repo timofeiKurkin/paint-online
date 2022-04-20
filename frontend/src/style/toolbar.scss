@@ -1,0 +1,68 @@
+@import "variables";
+
+.toolbar {
+  //height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  //width: 100%;
+  //border: 1px solid $border-color;
+
+  &__btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+    margin: 0 10px 20px 10px;
+    //z-index: 999;
+  }
+  //&__btn-color{
+  //  margin-left: 16px;
+  //  cursor: pointer;
+  //}
+  .brush {
+    background: url("../assets/img/brush.png") no-repeat center center;
+  }
+  .rect {
+    background: url("../assets/img/rect.png") no-repeat center center;
+  }
+  .circle {
+    background: url("../assets/img/circle.png") no-repeat center center;
+  }
+  .eraser {
+    background: url("../assets/img/eraser.png") no-repeat center center;
+  }
+  .line {
+    background: url("../assets/img/line.png") no-repeat center center;
+  }
+  .undo {
+    background: url("../assets/img/undo.png") no-repeat center center;
+    margin-left: auto;
+  }
+  .redo {
+    background: url("../assets/img/redo.png") no-repeat center center;
+  }
+  .save {
+    background: url("../assets/img/save.png") no-repeat center center;
+    margin-right: 16px;
+  }
+}
+
+.toolbar-settings {
+  label {
+    margin:0 10px 0 10px;
+
+  }
+  input {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  right: 10px;
+  top: 40%;
+}
